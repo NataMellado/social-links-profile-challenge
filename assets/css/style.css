@@ -1,133 +1,126 @@
 @font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
-    font-style: normal;
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+  font-style: normal;
 }
 
 :root {
-    /* Colors */
-    --color-primary: hsl(75, 94%, 57%);
-    --color-white: hsl(0, 0%, 100%);
-    --color-grey: hsl(0, 0%, 20%);
-    --color-dark-grey: hsl(0, 0%, 12%);
-    --color-off-black: hsl(0, 0%, 8%);
+  /* Colors */
+  --color-primary: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 20%);
+  --color-dark-grey: hsl(0, 0%, 12%);
+  --color-off-black: hsl(0, 0%, 8%);
 
-    /* Font */
-    --font-inter: 'Inter', sans-serif;
+  /* Font */
+  --font-inter: "Inter", sans-serif;
 
-    /* Border radius */
-    --border-radius-card: 0.75rem;
-    --border-radius-button: 0.5rem;
-    --border-radius-user: 50%;
+  /* Border radius */
+  --border-radius-card: 0.75rem;
+  --border-radius-button: 0.5rem;
+  --border-radius-user: 50%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, 
+html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    display:grid;
-    align-items: center;
-    background-color: var(--color-off-black);
+  display: grid;
+  align-items: center;
+  background-color: var(--color-off-black);
 }
 
 .card-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 1.5rem;
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  padding: 1.5rem;
+  gap: 1.5rem;
 }
 
 .user-card {
-    display: grid;
-    justify-self: center;
-    width: clamp(250px,384px, 100%);
-    padding: 2.5rem;
-    background-color: var(--color-dark-grey);
-    border-radius: var(--border-radius-card);
-    font-family: var(--font-inter);
-    text-align: center;
-    color: var(--color-white);
-
-    @media (max-width: 425px) {
-        padding: 1.5rem;
-    }
+  display: grid;
+  justify-self: center;
+  width: clamp(250px, 384px, 100%);
+  padding: 2.5rem;
+  background-color: var(--color-dark-grey);
+  border-radius: var(--border-radius-card);
+  font-family: var(--font-inter);
+  text-align: center;
+  color: var(--color-white);
 }
 
 .user-avatar {
-    border-radius: var(--border-radius-user);
-    width: 5.5rem;
-    margin-bottom: 1.625rem;
+  border-radius: var(--border-radius-user);
+  width: 5.5rem;
+  margin-bottom: 1.625rem;
 }
 
 .user-name {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.563rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.563rem;
 }
 
 .user-direction {
-    color: var(--color-primary);
-    font-size: 0.875rem;
-    font-weight: 700;
-    margin-bottom: 1.625rem;
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 1.625rem;
 }
 
 .user-description {
-    font-size: 0.875rem;
-    margin-bottom: 1.625rem;
+  font-size: 0.875rem;
+  margin-bottom: 1.625rem;
 }
 
 .user-social-links {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .button-style {
-    display: grid;
-    align-items: center;
-    background-color: var(--color-grey);
-    border-radius: var(--border-radius-button);
-    width: clamp(100%, 100%, 19rem);
-    height: 2.813rem;
-    transition: all 0.5s;
-
-    @media (max-width: 425px) {
-        with: clamp(100%, 100%, 17.5rem);
-    }
+  display: grid;
+  align-items: center;
+  background-color: var(--color-grey);
+  border-radius: var(--border-radius-button);
+  width: clamp(100%, 100%, 19rem);
+  height: 2.813rem;
+  transition: all 0.5s;
 }
 
 .social-link {
-    font-size: 0.875rem;
-    font-weight: 700;
-    color: var(--color-white);
-    text-decoration: none;
-    
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-white);
+  text-decoration: none;
 }
-
 
 .button-style:hover,
 .button-style:focus {
-    background-color: var(--color-primary);
-    cursor: pointer;
-
-    .social-link {
-        color: var(--color-off-black);
-    }
+  background-color: var(--color-primary);
+  cursor: pointer;
 }
 
 .social-link:hover,
 .social-link:focus {
-    color: var(--color-off-black);
+  color: var(--color-off-black);
 }
 
+@media (max-width: 425px) {
+  .user-card {
+    padding: 1.5rem;
+  }
 
-
+  .button-style {
+    width: clamp(100%, 100%, 17.5rem);
+  }
+}
