@@ -65,7 +65,7 @@ body {
 .user-avatar {
     border-radius: var(--border-radius-user);
     width: 5.5rem;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.625rem;
 }
 
 .user-name {
@@ -77,7 +77,8 @@ body {
 .user-direction {
     color: var(--color-primary);
     font-size: 0.875rem;
-    margin-bottom: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.625rem;
 }
 
 .user-description {
@@ -91,11 +92,13 @@ body {
 }
 
 .button-style {
+    display: grid;
+    align-items: center;
     background-color: var(--color-grey);
-    border: none;
     border-radius: var(--border-radius-button);
     width: clamp(100%, 100%, 19rem);
     height: 2.813rem;
+    transition: all 0.5s;
 
     @media (max-width: 425px) {
         with: clamp(100%, 100%, 17.5rem);
@@ -103,14 +106,28 @@ body {
 }
 
 .social-link {
+    font-size: 0.875rem;
     font-weight: 700;
     color: var(--color-white);
     text-decoration: none;
+    
 }
 
 
+.button-style:hover,
+.button-style:focus {
+    background-color: var(--color-primary);
+    cursor: pointer;
 
+    .social-link {
+        color: var(--color-off-black);
+    }
+}
 
+.social-link:hover,
+.social-link:focus {
+    color: var(--color-off-black);
+}
 
 
 
