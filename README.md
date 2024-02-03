@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/NataMellado/social-links-profile-challenge](https://github.com/NataMellado/social-links-profile-challenge)
+- Live Site URL: [https://natamellado.github.io/social-links-profile-challenge/](https://natamellado.github.io/social-links-profile-challenge/)
 
 
 ## My process
