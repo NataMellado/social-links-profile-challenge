@@ -41,7 +41,7 @@ body {
 
 .card-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 1.5rem;
   gap: 1.5rem;
 }
